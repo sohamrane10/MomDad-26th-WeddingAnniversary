@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Background images on sides */
+  .side-image {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+  }
+  
+  .side-image.left {
+    left: 0;
+    background-image: url('bg1.jpeg'); /* Replace with your dad's image path */
+  }
+  
+  .side-image.right {
+    right: 0;
+    background-image: url('bg2.jpeg'); /* Replace with your mom's image path */
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffccd5;
+    color: #b30047;
+    position: relative;
+    z-index: 1;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 2px 2px #fff;
+  }
+  
+  header .quote {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #800040;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .polaroid {
+    background: white;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    position: relative;
+    border: 2px solid #000;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .polaroid:nth-child(even) {
+    transform: rotate(3deg);
+  }
+  
+  .polaroid:hover {
+    transform: scale(1.02) rotate(0deg);
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .polaroid .quote {
+    font-size: 0.9rem;
+    color: #333;
+    font-style: italic;
+  }
+  
+  .pin {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 2;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffccd5;
+    color: #b30047;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .side-image {
+      display: none;
+    }
+  }
+  /* Romantic 26th Anniversary Theme */
+
+:root {
+  --rose-pink: #EF97A5;
+  --light-pink: #ECC9CA;
+  --salmon-pink: #F05F7F;
+  --raspberry-pink: #DF1A42;
+  --rouge: #AF3B4D;
+  --background: #FFF0F5;
+  --text-color: #5C1A1B;
+  --accent: #ff6e61;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background: var(--background);
+  color: var(--text-color);
+  background-image: url('path/to/your/flower-pattern.png'); /* Optional floral background */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, var(--light-pink), var(--salmon-pink));
+  color: var(--text-color);
+  border-bottom: 5px solid var(--raspberry-pink);
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--raspberry-pink);
+}
+
+header .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rouge);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.polaroid {
+  background: #fff;
+  border: 5px solid var(--rose-pink);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 200px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.polaroid .quote {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.pin {
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.side-image {
+  position: fixed;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.side-image.left {
+  left: 0;
+  background-image: url('path/to/dad-image.jpg');
+}
+
+.side-image.right {
+  right: 0;
+  background-image: url('path/to/mom-image.jpg');
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--light-pink);
+  color: var(--text-color);
+  font-size: 1rem;
+  border-top: 5px solid var(--raspberry-pink);
+}
